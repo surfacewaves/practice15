@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+</head>
+<body>
+
+<div th:each="student : ${students}">
+    <a th:text="${student.getLastName()} + ' ' + ${student.getFirstName()}" th:href="@{/students/{id}(id=${student.getId()})}"></a>
+
+</div>
+
+<br/>
+<hr/>
+
+<a href="/people/new">Create new person</a>
+
+</body>
+</html>
