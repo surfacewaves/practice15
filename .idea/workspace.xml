@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="879c7e4a-adec-42ec-af1b-a69b39c4ae95" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/Aspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/jmx/SchedulerMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/models/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/security/PersonDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/PeopleDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/RegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/SchedulerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/util/PersonValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/groups/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/controllers/GroupsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/controllers/GroupsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/controllers/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/controllers/StudentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/models/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/models/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/GroupsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/GroupsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/StudentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/andreev/practice15/services/StudentsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/groups/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/groups/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/groups/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/groups/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/show.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2P60Wufnc21wT3GUd01lfL5KYxq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/a1MoD/IdeaProjects/practice15",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "84bbb84c1ffa4912ec8528ac5ceb53ac",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\a1MoD\IdeaProjects\practice15\src\main\java\ru\andreev\practice15" />
+      <recent name="C:\Users\a1MoD\IdeaProjects\practice15\src\main\resources" />
+      <recent name="C:\Users\a1MoD\IdeaProjects\practice15\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.andreev.practice15.services" />
+      <recent name="ru.andreev.practice15" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Practice15Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="practice15" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.andreev.practice15.Practice15Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="879c7e4a-adec-42ec-af1b-a69b39c4ae95" name="Changes" comment="" />
+      <created>1682762260305</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682762260305</updated>
+      <workItem from="1682762261488" duration="1457000" />
+      <workItem from="1682763760903" duration="1221000" />
+      <workItem from="1682765004430" duration="1116000" />
+      <workItem from="1682766272130" duration="20800000" />
+      <workItem from="1682930892484" duration="3099000" />
+      <workItem from="1682942245947" duration="1325000" />
+      <workItem from="1682956434975" duration="1860000" />
+      <workItem from="1682968313766" duration="26557000" />
+      <workItem from="1683109329425" duration="5305000" />
+      <workItem from="1683136208522" duration="85000" />
+      <workItem from="1683186692290" duration="258000" />
+      <workItem from="1683354104381" duration="3296000" />
+      <workItem from="1683391282111" duration="16000" />
+      <workItem from="1683391349030" duration="3921000" />
+      <workItem from="1683405220149" duration="98000" />
+      <workItem from="1683407923977" duration="334000" />
+      <workItem from="1683458267852" duration="10000" />
+      <workItem from="1683462809908" duration="5367000" />
+      <workItem from="1685091421005" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

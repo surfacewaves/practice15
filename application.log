@@ -1,0 +1,86 @@
+730  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.0.Final
+771  [main] INFO  r.a.p.Practice15Application
+                – Starting Practice15Application using Java 19.0.2 with PID 17636 (C:\Users\a1MoD\IdeaProjects\practice15\target\classes started by klch in C:\Users\a1MoD\IdeaProjects\practice15)
+773  [main] INFO  r.a.p.Practice15Application
+                – No active profile set, falling back to 1 default profile: "default"
+1529 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1593 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2216 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2225 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2226 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2226 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.8]
+2297 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2298 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1486 ms
+2435 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2746 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11e9ac24
+2747 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2787 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2848 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.1.7.Final
+3192 [main] INFO  SQL dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+3977 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3987 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4423 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4717 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20ad64c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39a03ccc, org.springframework.security.web.context.SecurityContextHolderFilter@610d0067, org.springframework.security.web.header.HeaderWriterFilter@6a8ab98f, org.springframework.security.web.csrf.CsrfFilter@35975b05, org.springframework.security.web.authentication.logout.LogoutFilter@67521a79, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2319c1e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a1878d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b625e82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4db45d, org.springframework.security.web.access.ExceptionTranslationFilter@2165d4ab, org.springframework.security.web.access.intercept.AuthorizationFilter@256d8f17]
+4980 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+4998 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+5006 [main] INFO  r.a.p.Practice15Application
+                – Started Practice15Application in 4.613 seconds (process running for 5.559)
+18092 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+18092 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+18092 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 0 ms
+85799 [http-nio-8080-exec-4] INFO  ru.andreev.practice15.Aspect
+                – the method is now executed: List ru.andreev.practice15.services.GroupsService.findAll() 
+85800 [http-nio-8080-exec-4] INFO  r.a.p.services.GroupsService
+                – find all groups
+85839 [http-nio-8080-exec-4] INFO  ru.andreev.practice15.Aspect
+                – the method List ru.andreev.practice15.services.GroupsService.findAll() ended with time: 0.042051s
+91243 [http-nio-8080-exec-5] INFO  ru.andreev.practice15.Aspect
+                – the method is now executed: Group ru.andreev.practice15.services.GroupsService.findOne(int) 
+91257 [http-nio-8080-exec-5] INFO  r.a.p.services.GroupsService
+                – find one group
+91257 [http-nio-8080-exec-5] INFO  ru.andreev.practice15.Aspect
+                – the method Group ru.andreev.practice15.services.GroupsService.findOne(int) ended with time: 0.0149703s
+91259 [http-nio-8080-exec-5] INFO  ru.andreev.practice15.Aspect
+                – the method is now executed: List ru.andreev.practice15.services.GroupsService.getStudentsByGroupId(int) 
+91261 [http-nio-8080-exec-5] INFO  r.a.p.services.GroupsService
+                – students by group's id: 1
+91282 [http-nio-8080-exec-5] INFO  ru.andreev.practice15.Aspect
+                – the method List ru.andreev.practice15.services.GroupsService.getStudentsByGroupId(int) ended with time: 0.022923s
+103026 [http-nio-8080-exec-6] INFO  r.a.p.services.StudentsService
+                – find all students
+106690 [http-nio-8080-exec-7] INFO  r.a.p.services.StudentsService
+                – find one student
+106691 [http-nio-8080-exec-7] INFO  r.a.p.services.StudentsService
+                – get student's owner by id: 3
+38708731 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h41m9s159ms769µs100ns).
+38757659 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+38757664 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+38757668 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.

@@ -1,20 +1,24 @@
 package ru.andreev.practice15.controllers;
 
+import ru.andreev.practice15.models.Group;
 import ru.andreev.practice15.models.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import ru.andreev.practice15.services.GroupsService;
 import ru.andreev.practice15.services.StudentsService;
 
 @Controller
 @RequestMapping("/students")
 public class StudentsController {
     private StudentsService studentsService;
+    private GroupsService groupService;
 
     @Autowired
-    public StudentsController(StudentsService studentsService) {
+    public StudentsController(StudentsService studentsService, GroupsService groupService) {
         this.studentsService = studentsService;
+        this.groupService = groupService;
     }
 
     @GetMapping()
@@ -24,8 +28,14 @@ public class StudentsController {
     }
 
     @GetMapping("/{id}")
-    public String show(@PathVariable("id") int id, Model model) {
+    public String show(@PathVariable("id") int id, Model model, @ModelAttribute("group") Group group) {
         model.addAttribute("student", studentsService.findOne(id));
+        Group owner = studentsService.getStudentOwner(id);
+
+        if (owner != null)
+            model.addAttribute("owner", owner);
+        else
+            model.addAttribute("groups", groupService.findAll());
         return "students/show";
     }
 
@@ -56,5 +66,11 @@ public class StudentsController {
     public String delete(@PathVariable("id") int id) {
         studentsService.delete(id);
         return "redirect:/students";
+    }
+
+    @PatchMapping("/{id}/assign")
+    public String assign(@PathVariable("id") int id, @ModelAttribute("group") Group group) {
+        studentsService.assign(id, group);
+        return "redirect:/students/" + id;
     }
 }

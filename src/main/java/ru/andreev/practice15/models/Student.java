@@ -1,9 +1,13 @@
 package ru.andreev.practice15.models;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "Student")
+@Getter
+@Setter
 public class Student {
 
     @Id
@@ -17,6 +21,11 @@ public class Student {
     @Column(name = "lastName")
     private String lastName;
 
+    @ManyToOne
+    //название колонки в student / group_id ссылается на id в родителе-group
+    @JoinColumn(name = "owner_id", referencedColumnName = "id")
+    private Group owner;
+
     public Student() {
     }
 
@@ -26,27 +35,13 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", owner=" + owner +
+                '}';
     }
 }

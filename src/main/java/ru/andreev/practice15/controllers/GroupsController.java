@@ -5,16 +5,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import ru.andreev.practice15.services.AdminService;
 import ru.andreev.practice15.services.GroupsService;
 
 @Controller
 @RequestMapping("/groups")
 public class GroupsController {
     private final GroupsService groupsService;
+    private final AdminService adminService;
 
     @Autowired
-    public GroupsController(GroupsService groupsService) {
+    public GroupsController(GroupsService groupsService, AdminService adminService) {
         this.groupsService = groupsService;
+        this.adminService = adminService;
     }
 
     @GetMapping()
@@ -26,6 +29,7 @@ public class GroupsController {
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("group", groupsService.findOne(id));
+        model.addAttribute("students", groupsService.getStudentsByGroupId(id));
         return "/groups/show";
     }
 
@@ -56,5 +60,11 @@ public class GroupsController {
     public String delete(@PathVariable("id") int id) {
         groupsService.delete(id);
         return "redirect:/groups";
+    }
+
+    @GetMapping("/admin")
+    public String adminPage() {
+        adminService.doAdminStaff();
+        return "groups/admin";
     }
 }

@@ -6,14 +6,20 @@
 </head>
 <body>
 
-<div th:each="group : ${groups}">
-    <a th:text="${group.getName()}" th:href="@{/groups/{id}(id=${group.getId()})}"></a>
-</div>
+    <div th:each="group : ${groups}">
+        <a th:text="${group.getName()}" th:href="@{/groups/{id}(id=${group.getId()})}"></a>
+    </div>
 
 <br/>
 <hr/>
 
 <a href="/groups/new">Create new group</a>
+
+<br/>
+
+<form th:action="@{/logout}" th:method="POST">
+    <input type="submit" value="Logout"/>
+</form>
 
 </body>
 </html>
